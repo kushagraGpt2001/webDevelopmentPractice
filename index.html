@@ -5,57 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile-Card-Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-</head>
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="profile-card" onmousemove="colorChanger()">
-        <div class="image">
-            <img src="image.jpg" alt="Profile" class="profile-image">
-        </div>
-        <div class="textdata">
-            <span class="data">Robert Russy</span>
-            <span class="Job">Photographer & Blogger</span>
-        </div>
-        <div class="media-icons">
-            <a href="#" class="link" style="background: #3b5998;">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="link" style="background: #d62976;">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" class="link" style="background: #00acee;">
-                <i class="bi bi-twitter"></i>
-            </a>
-        </div>
-        <div class="buttons">
-            <button class="button">Subscribe</button>
-            <button class="button">Message </button>
-        </div>
-        <div class="analytics ">
-            <div class="data">
-                <i class="bi bi-heart"></i>
-                <span class="number">60K</span>
+    <div class="mainSection">
+        <div class="test rotation">
+            <img src="image.jpg" width="150px" height="150px">
+            <p class="mainName">Tanzeel Khan</p>
+            <p class="tagline">ML Enthusiast & Web Developer</p>
+            <div class="icons">
+                <a href="#" class="icon" style="background: #3b5998;"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="icon" style="background: #d62976;"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="icon" style="background: #00acee;"><i class="bi bi-twitter"></i></a>
             </div>
-            <div class="data ">
-                | <i class="bi bi-chat-right"> 20k</i> |
+            <div class="buttons">
+                <button class="button">Subscribe</button>
+                <button class="button">Message</button>
             </div>
-            <div class="data">
-                <i class="bi bi-share"></i>
-                <span class="number">50k</span>
+            <div class="footer">
+                <ul>
+                    <li><i class="bi bi-heart"></i>60K</li>
+                    <li><i class="bi bi-chat-right"></i>20K</li>
+                    <li><i class="bi bi-share"></i>50K</li>
+                </ul>
             </div>
+            <!-- <div class="rotation"></div> -->
         </div>
     </div>
-    <!-- <script>
-        function colorChanger() {
-            color = "#";
-            color += Math.floor(Math.random()*166725);
-            document.getElementsByClassName("profile-card")[0].style.backgroundColor = color;
-        }
-    </script> -->
 </body>
+<!-- <script>
+    setInterval(colorChanger, 100);
+    function colorChanger() {
+        html = "-moz-linear-gradient(";
+        let colors = ["#00ff44", "#ffae00", "#ff0000", "#6200ff", "#00a2ff", "#ff008c", "#00ffea", "#8c00ff"];
+        for (let i=0; i<8; i++) {
+            let index = Math.floor(Math.random()*colors.length);
+            html += colors[index] + " ";
+        }
+        html = html.slice(0, -1);
+        html += ")";
+        console.log(html);
+        document.getElementsByClassName("rotation")[0].style.background = html;
+    }
+</script> -->
 
 </html>
