@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-Card-Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+</head>
+
+<body>
+    <div class="profile-card" onmousemove="colorChanger()">
+        <div class="image">
+            <img src="image.jpg" alt="Profile" class="profile-image">
+        </div>
+        <div class="textdata">
+            <span class="data">Robert Russy</span>
+            <span class="Job">Photographer & Blogger</span>
+        </div>
+        <div class="media-icons">
+            <a href="#" class="link" style="background: #3b5998;">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="link" style="background: #d62976;">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="link" style="background: #00acee;">
+                <i class="bi bi-twitter"></i>
+            </a>
+        </div>
+        <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message </button>
+        </div>
+        <div class="analytics ">
+            <div class="data">
+                <i class="bi bi-heart"></i>
+                <span class="number">60K</span>
+            </div>
+            <div class="data ">
+                | <i class="bi bi-chat-right"> 20k</i> |
+            </div>
+            <div class="data">
+                <i class="bi bi-share"></i>
+                <span class="number">50k</span>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        function colorChanger() {
+            color = "#";
+            color += Math.floor(Math.random()*166725);
+            document.getElementsByClassName("profile-card")[0].style.backgroundColor = color;
+        }
+    </script> -->
+</body>
+
+</html>
